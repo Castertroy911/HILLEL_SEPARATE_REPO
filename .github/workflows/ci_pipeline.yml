@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
-        pip install https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/win64/chromedriver-win64.zip
+        wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/win64/chromedriver-win64.zip
 
     - name: Run tests
       run: |
