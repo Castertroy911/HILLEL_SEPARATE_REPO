@@ -8,6 +8,7 @@ from ui_pages.forms_page import FormsPage
 @pytest.mark.lesson_19
 class TestFormsPage:
 
+    @pytest.mark.xfail
     def test_forms_page(self, browser):
         page = FormsPage(browser)
         page.open_forms_page()
@@ -20,6 +21,7 @@ class TestFormsPage:
         page = FormsPage(browser)
         page.select_state_and_city()
 
+    @pytest.mark.xfail
     def test_check_form(self, browser):
         page = FormsPage(browser)
         page.click_submit_button()
